@@ -1,1 +1,126 @@
 /* EDIT THESE STYLES FOR YOUR TASKS */
+
+#Logo {
+    transition: transform 0.5s ease-in-out;
+}
+
+#Logo:hover {
+    transform: scale(1.1) rotate(45deg);
+}
+
+.fancy-link{
+    background-image: linear-gradient(90deg, red, blue);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 300ms ease;
+
+    text-decoration: none;
+    color: inherit;
+    font-weight: 900;
+}
+
+.fancy-link:hover{
+    background-size: 100% 3px;
+}
+
+/* TASK 3 */
+.center-grid .box-4 {
+    grid-row: 2;
+    grid-column: 1;
+    background-color: #EA4C89;
+    color: #333;
+    display: grid;
+    place-items: center;
+    font-size: 2em;
+    animation: task-3 4s infinite linear;
+  }
+  @keyframes task-3 {
+    0% { grid-column: 1; }
+    33% { grid-column: 2; }
+    67% { grid-column: 3; }
+    100% { grid-column: 1; }
+  }
+
+
+
+
+/* TASK 4 */
+  aside {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #EA4C89;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation-name: notification;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 5s;
+  }
+  aside span {
+    font-size: 2em;
+  }
+  @keyframes notification {
+    0% {
+      transform: translateX(30em);
+    }
+    20% {
+      transform: translateX(0);
+    }
+    80% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(30em);
+    }
+  }
+
+
+
+
+
+  /* TASK 5 */
+.center-grid .box-2 {
+    grid-column: 2;
+    display: grid; 
+    place-items: center;
+    background: linear-gradient(90deg, rgb(3, 1, 37) 0%, rgb(94, 94, 183) 35%, rgb(192, 234, 38) 100%);
+  }
+  .center-grid .box-2 span {
+    font-size: 2em;
+  }
+  .center-grid .box-2:hover {
+    animation: color-change 2s infinite linear;
+  }
+  @keyframes color-change {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+  
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
+
+
+
+
+
+  /* TASK 6 */
+  .center-grid .box-1 svg {
+    animation: spin 8s linear infinite;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
